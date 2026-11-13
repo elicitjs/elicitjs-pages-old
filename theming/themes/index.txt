@@ -1,0 +1,226 @@
+1:"$Sreact.fragment"
+2:I[7121,[],""]
+3:I[4581,[],""]
+4:I[6984,["9756","static/chunks/9756-774bfe52807a90d2.js","2816","static/chunks/2816-0775acbb7f82aaa6.js","2172","static/chunks/2172-cb2795254ef6d392.js","6888","static/chunks/6888-d7628378e7d9be3c.js","8466","static/chunks/8466-86c5e1c8c141e446.js","634","static/chunks/app/theming/themes/page-a63f6d44dd67e02a.js"],"DocShell"]
+5:I[8500,["9756","static/chunks/9756-774bfe52807a90d2.js","2816","static/chunks/2816-0775acbb7f82aaa6.js","2172","static/chunks/2172-cb2795254ef6d392.js","6888","static/chunks/6888-d7628378e7d9be3c.js","8466","static/chunks/8466-86c5e1c8c141e446.js","634","static/chunks/app/theming/themes/page-a63f6d44dd67e02a.js"],""]
+6:I[7009,["9756","static/chunks/9756-774bfe52807a90d2.js","2816","static/chunks/2816-0775acbb7f82aaa6.js","2172","static/chunks/2172-cb2795254ef6d392.js","6888","static/chunks/6888-d7628378e7d9be3c.js","8466","static/chunks/8466-86c5e1c8c141e446.js","634","static/chunks/app/theming/themes/page-a63f6d44dd67e02a.js"],"Example"]
+12:I[7123,[],""]
+:HL["/_next/static/css/a182503e6b5580ad.css","style"]
+7:T406,// A built-in theme by NAME. `theme: themes.nyt` is the same thing.
+mount(Elicit({
+  width: 480, height: 300,
+  theme: "nyt",
+  title: "Where will unemployment go next?",
+  subtitle: "Rate, %. Drag the dots after 2024 to your forecast.",
+  caption: "Up to 2024 is observed; the rest is yours.",
+  context: (d) => d.year <= 2024,
+  data: [
+    { year: 2020, rate: 8.1 }, { year: 2021, rate: 5.4 }, { year: 2022, rate: 3.6 },
+    { year: 2023, rate: 3.6 }, { year: 2024, rate: 4.0 },
+    { year: 2025, rate: 4.2 }, { year: 2026, rate: 4.4 }, { year: 2027, rate: 4.5 },
+  ],
+  schema: {
+    year: { type: "quantitative", domain: [2020, 2027] },
+    rate: { type: "quantitative", domain: [0, 10] },
+  },
+  // Ticks clear of the corner, where the two axes' end labels would meet.
+  axes: { x: { tickFormat: "d", tickValues: [2021, 2023, 2025, 2027] } },
+  marks: [
+    lineY({ channels: { x: { field: "year" }, y: { field: "rate" } } }),
+    point({ channels: { x: { field: "year" }, y: { field: "rate", edit: move() } } }),
+  ],
+}));
+0:{"P":null,"b":"_8l34-gak2MBKqw77oV-G","p":"","c":["","theming","themes",""],"i":false,"f":[[["",{"children":["theming",{"children":["themes",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a182503e6b5580ad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"suppressHydrationWarning":true,"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["theming",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["themes",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L4",null,{"children":[["$","h1",null,{"children":"Named themes"}],"\n",["$","p",null,{"className":"lead","children":["A ",["$","strong",null,{"children":"named theme"}]," restyles a whole chart from one word: ",["$","code",null,{"className":"inline","children":"theme: \"nyt\""}],". There are seventeen. Fourteen are the house styles of ",["$","a",null,{"href":"https://github.com/microsoft/flint-chart","children":"Flint"}],", Microsoft's chart grammar, transcribed from its presets; ",["$","code",null,{"className":"inline","children":"default"}],", ",["$","code",null,{"className":"inline","children":"survey"}]," and ",["$","code",null,{"className":"inline","children":"dark"}]," are ElicitJS's own. Each is a partial ",["$","$L5",null,{"href":"/theming","children":"theme"}],", so a chart can start from one and change any token."]}],"\n",["$","section",null,{"id":"by-name","children":[["$","h2",null,{"className":"section","children":"Using a named theme"}],[["$","p",".0",{"children":["Pass the name as ",["$","code",null,{"className":"inline","children":"theme"}],", or the object from ",["$","code",null,{"className":"inline","children":"themes"}],". ",["$","code",null,{"className":"inline","children":"theme: \"nyt\""}]," and ",["$","code",null,{"className":"inline","children":"theme: themes.nyt"}]," are the same. ",["$","code",null,{"className":"inline","children":"setTheme(\"nyt\")"}]," makes it the default for every chart built afterwards."],"className":"intro"}],["$","p",".1",{"children":"A named theme sets the surface, the ink and palettes, the fonts of the labels and the title, which axes draw a spine and ticks, which get gridlines, the zero line, the band padding, corner radii, line widths, point size, and the colour of the hover and selection outline. It does not move anything you place yourself.","className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L6",".2",{"code":"$7","title":"theme: \"nyt\"","blurb":"A serif headline over sans-serif labels, no value-axis spine, a quiet grid and a rule at zero.","try":"drag a dot after 2024."}]]}]]}],"\n","$L8","\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf"]}],null,"$L10"]}],{},null,false]},null,false]},null,false]},null,false],"$L11",false]],"m":"$undefined","G":["$12",[]],"s":false,"S":true}
+19:I[484,[],"OutletBoundary"]
+1b:I[7837,[],"AsyncMetadataOutlet"]
+1d:I[484,[],"ViewportBoundary"]
+1f:I[484,[],"MetadataBoundary"]
+20:"$Sreact.suspense"
+13:T461,// One chart, drawn under each theme. Only `theme` changes.
+const chart = (theme) => Elicit({
+  width: 320, height: 240, theme,
+  title: theme,
+  subtitle: "Chance of each outcome, %",
+  data: [
+    { outcome: "Rain", who: "You", p: 40 }, { outcome: "Rain", who: "Experts", p: 55 },
+    { outcome: "Sun", who: "You", p: 35 }, { outcome: "Sun", who: "Experts", p: 30 },
+    { outcome: "Snow", who: "You", p: 25 }, { outcome: "Snow", who: "Experts", p: 15 },
+  ],
+  schema: {
+    outcome: { type: "categorical", domain: ["Rain", "Sun", "Snow"] },
+    who: { type: "categorical", domain: ["You", "Experts"] },
+    p: { type: "quantitative", domain: [0, 60] },
+  },
+  marks: [
+    barY({
+      channels: {
+        x: { field: "outcome" }, xOffset: { field: "who" },
+        y: { field: "p", edit: move() },
+        fill: { field: "who", legend: { anchor: "top", title: false } },
+      },
+    }),
+  ],
+});
+const row = document.createElement("div");
+row.style.cssText = "display:flex;flex-wrap:wrap;gap:20px;max-width:680px";
+for (const name of ["nyt", "economist", "bbc", "datawrapper"]) row.append(chart(name));
+mount(row);
+8:["$","section",null,{"id":"newsroom","children":[["$","h2",null,{"className":"section","children":"Newsroom"}],[["$","p",".0",{"children":[["$","code",null,{"className":"inline","children":"nyt"}],", ",["$","code",null,{"className":"inline","children":"economist"}],", ",["$","code",null,{"className":"inline","children":"bbc"}]," and ",["$","code",null,{"className":"inline","children":"datawrapper"}]," are editorial styles. They drop the value-axis spine and ticks, keep a light value grid, and draw a rule at zero. ",["$","code",null,{"className":"inline","children":"nyt"}]," sets its headline in Georgia. ",["$","code",null,{"className":"inline","children":"economist"}]," uses a blue-grey grid and tighter bars. ",["$","code",null,{"className":"inline","children":"bbc"}]," uses large type, a four-colour palette and a heavy zero rule. ",["$","code",null,{"className":"inline","children":"datawrapper"}]," uses Roboto and a light solid grid."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L6",".1",{"code":"$13","title":"nyt · economist · bbc · datawrapper","blurb":"The same grouped bar chart under each newsroom theme.","try":"drag any bar — every theme keeps the same gesture."}]]}]]}]
+14:T455,// One chart, drawn under each theme. Only `theme` changes.
+const chart = (theme) => Elicit({
+  width: 320, height: 240, theme,
+  title: theme,
+  subtitle: "Chance of each outcome, %",
+  data: [
+    { outcome: "Rain", who: "You", p: 40 }, { outcome: "Rain", who: "Experts", p: 55 },
+    { outcome: "Sun", who: "You", p: 35 }, { outcome: "Sun", who: "Experts", p: 30 },
+    { outcome: "Snow", who: "You", p: 25 }, { outcome: "Snow", who: "Experts", p: 15 },
+  ],
+  schema: {
+    outcome: { type: "categorical", domain: ["Rain", "Sun", "Snow"] },
+    who: { type: "categorical", domain: ["You", "Experts"] },
+    p: { type: "quantitative", domain: [0, 60] },
+  },
+  marks: [
+    barY({
+      channels: {
+        x: { field: "outcome" }, xOffset: { field: "who" },
+        y: { field: "p", edit: move() },
+        fill: { field: "who", legend: { anchor: "top", title: false } },
+      },
+    }),
+  ],
+});
+const row = document.createElement("div");
+row.style.cssText = "display:flex;flex-wrap:wrap;gap:20px;max-width:680px";
+for (const name of ["swiss", "nature", "deStijl"]) row.append(chart(name));
+mount(row);
+9:["$","section",null,{"id":"print","children":[["$","h2",null,{"className":"section","children":"Print and science"}],[["$","p",".0",{"children":[["$","code",null,{"className":"inline","children":"swiss"}]," is the International Typographic Style: warm paper, black spines, short outward ticks on the value axis, one signal red. ",["$","code",null,{"className":"inline","children":"nature"}]," is the journal figure: black Arial, full spines with long ticks, no gridlines, and the Okabe–Ito colours. ",["$","code",null,{"className":"inline","children":"deStijl"}]," uses red, yellow and blue on off-white, heavy black value gridlines, and an italic Futura title."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L6",".1",{"code":"$14","title":"swiss · nature · deStijl","blurb":"Typographic, scientific and Neo-Plastic.","try":"drag a bar."}]]}]]}]
+15:T45e,// One chart, drawn under each theme. Only `theme` changes.
+const chart = (theme) => Elicit({
+  width: 320, height: 240, theme,
+  title: theme,
+  subtitle: "Chance of each outcome, %",
+  data: [
+    { outcome: "Rain", who: "You", p: 40 }, { outcome: "Rain", who: "Experts", p: 55 },
+    { outcome: "Sun", who: "You", p: 35 }, { outcome: "Sun", who: "Experts", p: 30 },
+    { outcome: "Snow", who: "You", p: 25 }, { outcome: "Snow", who: "Experts", p: 15 },
+  ],
+  schema: {
+    outcome: { type: "categorical", domain: ["Rain", "Sun", "Snow"] },
+    who: { type: "categorical", domain: ["You", "Experts"] },
+    p: { type: "quantitative", domain: [0, 60] },
+  },
+  marks: [
+    barY({
+      channels: {
+        x: { field: "outcome" }, xOffset: { field: "who" },
+        y: { field: "p", edit: move() },
+        fill: { field: "who", legend: { anchor: "top", title: false } },
+      },
+    }),
+  ],
+});
+const row = document.createElement("div");
+row.style.cssText = "display:flex;flex-wrap:wrap;gap:20px;max-width:680px";
+for (const name of ["mckinsey", "powerbiLight", "powerbi"]) row.append(chart(name));
+mount(row);
+a:["$","section",null,{"id":"business","children":[["$","h2",null,{"className":"section","children":"Business"}],[["$","p",".0",{"children":[["$","code",null,{"className":"inline","children":"mckinsey"}]," draws no axes and no gridlines, a near-black primary over electric blues, and a baseline. ",["$","code",null,{"className":"inline","children":"powerbiLight"}]," and ",["$","code",null,{"className":"inline","children":"powerbi"}]," are the dashboard tile on a white and a near-black canvas: Segoe UI, a quiet grid, bars rounded by 3px. The dark tile's sequential ramp runs from dim to bright, so a higher value is brighter."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L6",".1",{"code":"$15","title":"mckinsey · powerbiLight · powerbi","blurb":"Consulting deck and dashboard tiles.","try":"drag a bar."}]]}]]}]
+16:T44c,// One chart, drawn under each theme. Only `theme` changes.
+const chart = (theme) => Elicit({
+  width: 320, height: 240, theme,
+  title: theme,
+  subtitle: "Chance of each outcome, %",
+  data: [
+    { outcome: "Rain", who: "You", p: 40 }, { outcome: "Rain", who: "Experts", p: 55 },
+    { outcome: "Sun", who: "You", p: 35 }, { outcome: "Sun", who: "Experts", p: 30 },
+    { outcome: "Snow", who: "You", p: 25 }, { outcome: "Snow", who: "Experts", p: 15 },
+  ],
+  schema: {
+    outcome: { type: "categorical", domain: ["Rain", "Sun", "Snow"] },
+    who: { type: "categorical", domain: ["You", "Experts"] },
+    p: { type: "quantitative", domain: [0, 60] },
+  },
+  marks: [
+    barY({
+      channels: {
+        x: { field: "outcome" }, xOffset: { field: "who" },
+        y: { field: "p", edit: move() },
+        fill: { field: "who", legend: { anchor: "top", title: false } },
+      },
+    }),
+  ],
+});
+const row = document.createElement("div");
+row.style.cssText = "display:flex;flex-wrap:wrap;gap:20px;max-width:680px";
+for (const name of ["apple", "material"]) row.append(chart(name));
+mount(row);
+b:["$","section",null,{"id":"product","children":[["$","h2",null,{"className":"section","children":"Product interfaces"}],[["$","p",".0",{"children":[["$","code",null,{"className":"inline","children":"apple"}]," uses the system colours, no spines or ticks, a hairline grid and bars rounded by 4px. ",["$","code",null,{"className":"inline","children":"material"}]," is Material Design 3: a purple-led tonal palette, Google Sans and Roboto, outline-variant gridlines, rounded bars and round legend chips."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L6",".1",{"code":"$16","title":"apple · material","blurb":"Quiet app-interface charts.","try":"drag a bar."}]]}]]}]
+17:T449,// One chart, drawn under each theme. Only `theme` changes.
+const chart = (theme) => Elicit({
+  width: 320, height: 240, theme,
+  title: theme,
+  subtitle: "Chance of each outcome, %",
+  data: [
+    { outcome: "Rain", who: "You", p: 40 }, { outcome: "Rain", who: "Experts", p: 55 },
+    { outcome: "Sun", who: "You", p: 35 }, { outcome: "Sun", who: "Experts", p: 30 },
+    { outcome: "Snow", who: "You", p: 25 }, { outcome: "Snow", who: "Experts", p: 15 },
+  ],
+  schema: {
+    outcome: { type: "categorical", domain: ["Rain", "Sun", "Snow"] },
+    who: { type: "categorical", domain: ["You", "Experts"] },
+    p: { type: "quantitative", domain: [0, 60] },
+  },
+  marks: [
+    barY({
+      channels: {
+        x: { field: "outcome" }, xOffset: { field: "who" },
+        y: { field: "p", edit: move() },
+        fill: { field: "who", legend: { anchor: "top", title: false } },
+      },
+    }),
+  ],
+});
+const row = document.createElement("div");
+row.style.cssText = "display:flex;flex-wrap:wrap;gap:20px;max-width:680px";
+for (const name of ["pop", "cartoon"]) row.append(chart(name));
+mount(row);
+c:["$","section",null,{"id":"playful","children":[["$","h2",null,{"className":"section","children":"Playful"}],[["$","p",".0",{"children":[["$","code",null,{"className":"inline","children":"pop"}]," extends ",["$","code",null,{"className":"inline","children":"swiss"}],": process colours on yellow, heavy black spines, thick outlines on every filled mark, oversized points and Arial Black. ",["$","code",null,{"className":"inline","children":"cartoon"}]," uses cream paper, a comic typeface, dark outlines, rounded bars, chunky lines and a dashed grid."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L6",".1",{"code":"$17","title":"pop · cartoon","blurb":"Heavy outlines and loud colour.","try":"drag a bar."}]]}]]}]
+18:T454,// One chart, drawn under each theme. Only `theme` changes.
+const chart = (theme) => Elicit({
+  width: 320, height: 240, theme,
+  title: theme,
+  subtitle: "Chance of each outcome, %",
+  data: [
+    { outcome: "Rain", who: "You", p: 40 }, { outcome: "Rain", who: "Experts", p: 55 },
+    { outcome: "Sun", who: "You", p: 35 }, { outcome: "Sun", who: "Experts", p: 30 },
+    { outcome: "Snow", who: "You", p: 25 }, { outcome: "Snow", who: "Experts", p: 15 },
+  ],
+  schema: {
+    outcome: { type: "categorical", domain: ["Rain", "Sun", "Snow"] },
+    who: { type: "categorical", domain: ["You", "Experts"] },
+    p: { type: "quantitative", domain: [0, 60] },
+  },
+  marks: [
+    barY({
+      channels: {
+        x: { field: "outcome" }, xOffset: { field: "who" },
+        y: { field: "p", edit: move() },
+        fill: { field: "who", legend: { anchor: "top", title: false } },
+      },
+    }),
+  ],
+});
+const row = document.createElement("div");
+row.style.cssText = "display:flex;flex-wrap:wrap;gap:20px;max-width:680px";
+for (const name of ["default", "survey", "dark"]) row.append(chart(name));
+mount(row);
+d:["$","section",null,{"id":"own","children":[["$","h2",null,{"className":"section","children":"ElicitJS's own"}],[["$","p",".0",{"children":[["$","code",null,{"className":"inline","children":"default"}]," is the built-in look. ",["$","code",null,{"className":"inline","children":"survey"}]," restyles the ",["$","$L5",null,{"href":"/widgets","children":"survey widgets"}]," with an indigo accent and Inter. ",["$","code",null,{"className":"inline","children":"dark"}]," paints its own slate surface, so it reads on a dark page with no host CSS."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L6",".1",{"code":"$18","title":"default · survey · dark","blurb":"The library's own three.","try":"drag a bar."}]]}]]}]
+e:["$","section",null,{"id":"extends","children":[["$","h2",null,{"className":"section","children":"Extending a theme"}],[["$","p",".0",{"children":[["$","code",null,{"className":"inline","children":"extends"}]," starts a partial theme from a named one, and the rest of the object deep-merges over it — Flint's word for the same idea. Use it to keep a house style and change its colour, a radius or a font."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L6",".1",{"code":"// Start from a named theme and change what you need. `extends` names the base;\n// the rest deep-merges over it.\nmount(Elicit({\n  width: 420, height: 260,\n  theme: {\n    extends: \"swiss\",\n    ink: \"#0067a5\",                      // Swiss blue instead of signal red\n    marks: { bar: { rx: 2 } },\n    title: { fontStyle: \"italic\" },\n  },\n  title: \"Budget split\",\n  subtitle: \"Drag each bar to your estimate, %\",\n  data: [{ line: \"Staff\", v: 45 }, { line: \"Rent\", v: 25 }, { line: \"Tools\", v: 30 }],\n  schema: {\n    line: { type: \"categorical\", domain: [\"Staff\", \"Rent\", \"Tools\"] },\n    v: { type: \"quantitative\", domain: [0, 60] },\n  },\n  marks: [barY({ channels: { x: { field: \"line\" }, y: { field: \"v\", edit: move() } } })],\n}));\n","title":"{ extends: \"swiss\", … }","blurb":"Swiss, with a blue ink, rounded bars and an italic title.","try":"drag a bar."}]]}]]}]
+f:["$","section",null,{"id":"flint","children":[["$","h2",null,{"className":"section","children":"What carries over from Flint"}],[["$","p",".0",{"children":["Each preset keeps Flint's colours, font stacks, weights and proportions. Flint's ",["$","code",null,{"className":"inline","children":"bandFraction"}]," becomes ",["$","code",null,{"className":"inline","children":"bandPadding"}]," (one minus it), a point's area becomes a radius, and its presence words become tokens: ",["$","code",null,{"className":"inline","children":"omit"}]," turns a spine off or sets ",["$","code",null,{"className":"inline","children":"tickSize: 0"}],", and a value-axis grid becomes ",["$","code",null,{"className":"inline","children":"grid.show: \"continuous\""}],". Flint names type sizes with tokens (",["$","code",null,{"className":"inline","children":"text.100"}]," to ",["$","code",null,{"className":"inline","children":"text.500"}],"), which these themes set as 11 to 24 px."],"className":"intro"}],["$","p",".1",{"children":["Some of a Flint theme is layout that ElicitJS leaves to the spec: data labels on marks, series names at line ends, a value axis on the right, and furniture such as The Economist's red tab or the BBC's footer rule. Draw those with marks and ",["$","$L5",null,{"href":"/guides","children":"guides"}]," where you need them."],"className":"intro"}],["$","p",".2",{"children":["Flint is MIT-licensed. Its theme specification is at ",["$","a",null,{"href":"https://github.com/microsoft/flint-chart/blob/main/docs/theme-spec.md","children":"docs/theme-spec.md"}],", and its theme gallery at ",["$","a",null,{"href":"https://microsoft.github.io/flint-chart/#/themes","children":"microsoft.github.io/flint-chart"}],"."],"className":"intro"}]],null]}]
+10:["$","$L19",null,{"children":["$L1a",["$","$L1b",null,{"promise":"$@1c"}]]}]
+11:["$","$1","h",{"children":[null,[["$","$L1d",null,{"children":"$L1e"}],null],["$","$L1f",null,{"children":["$","div",null,{"hidden":true,"children":["$","$20",null,{"fallback":null,"children":"$L21"}]}]}]]}]
+1e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1a:null
+1c:{"metadata":[["$","title","0",{"children":"ElicitJS Docs"}],["$","meta","1",{"name":"description","content":"Declarative visual belief elicitation — documentation"}]],"error":null,"digest":"$undefined"}
+21:"$1c:metadata"

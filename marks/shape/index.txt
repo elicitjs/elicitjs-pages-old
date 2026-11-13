@@ -1,0 +1,149 @@
+1:"$Sreact.fragment"
+2:I[7121,[],""]
+3:I[4581,[],""]
+4:I[6984,["9756","static/chunks/9756-774bfe52807a90d2.js","2816","static/chunks/2816-0775acbb7f82aaa6.js","2172","static/chunks/2172-cb2795254ef6d392.js","6888","static/chunks/6888-d7628378e7d9be3c.js","8466","static/chunks/8466-86c5e1c8c141e446.js","7565","static/chunks/app/marks/shape/page-d17ea1252b1463e0.js"],"DocShell"]
+5:I[2478,["9756","static/chunks/9756-774bfe52807a90d2.js","2816","static/chunks/2816-0775acbb7f82aaa6.js","2172","static/chunks/2172-cb2795254ef6d392.js","6888","static/chunks/6888-d7628378e7d9be3c.js","8466","static/chunks/8466-86c5e1c8c141e446.js","7565","static/chunks/app/marks/shape/page-d17ea1252b1463e0.js"],"ApiReference"]
+11:I[7123,[],""]
+:HL["/_next/static/css/a182503e6b5580ad.css","style"]
+0:{"P":null,"b":"_8l34-gak2MBKqw77oV-G","p":"","c":["","marks","shape",""],"i":false,"f":[[["",{"children":["marks",{"children":["shape",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a182503e6b5580ad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"suppressHydrationWarning":true,"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["marks",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["shape",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L4",null,{"children":[["$","h1",null,{"children":"Shape"}],"\n",["$","p",null,{"className":"lead","children":[["$","code",null,{"className":"inline","children":"shape()"}]," draws one SVG path per row, centred at its ",["$","code",null,{"className":"inline","children":"x"}],"/",["$","code",null,{"className":"inline","children":"y"}]," — a named shape, a pictogram, any path you write. The shape comes from a ",["$","code",null,{"className":"inline","children":"symbol"}]," channel or the ",["$","code",null,{"className":"inline","children":"path"}]," option; ",["$","code",null,{"className":"inline","children":"size"}]," is the radius of the box it fits, and ",["$","code",null,{"className":"inline","children":"angle"}]," turns it in place. It takes every universal edit, as ",["$","code",null,{"className":"inline","children":"point"}]," does."]}],"\n",["$","$L5",null,{"entries":[{"name":"shape(options)","summary":["One SVG path per row, centred at ",["$","code",null,{"className":"inline","children":"x"}],"/",["$","code",null,{"className":"inline","children":"y"}],". The shape comes from a ",["$","code",null,{"className":"inline","children":"symbol"}]," channel or the ",["$","code",null,{"className":"inline","children":"path"}]," option. It takes every universal edit, is picked inside its body, and declares a node box for a ",["$","a",null,{"href":"/marks/network","children":"network"}],"."],"signatures":["shape({ channels, path, edits, id, table, tip }) → Mark"],"options":[{"name":"path","type":"string | (d, i, data) => string","default":"'circle'","desc":["The shape when no ",["$","code",null,{"className":"inline","children":"symbol"}]," channel is declared: a shape name, an SVG path, or a function of the row returning either. A string that is neither draws a circle and logs a warning."]},{"name":"channels","type":"object","default":"{}","desc":["Channel map — see ",["$","b",null,{"children":"Channels"}],"."]},{"name":"edits","type":"Edit[]","default":"—","desc":["Mark-level edits. ",["$","code",null,{"className":"inline","children":"move"}],", ",["$","code",null,{"className":"inline","children":"resize"}],", ",["$","code",null,{"className":"inline","children":"rotate"}]," and the rest work as on ","$L6","."]},{"name":"fill, stroke, size, angle, …","type":"style","default":"fill: theme ink","desc":"Shorthands for constant channels."}],"channels":[{"name":"x / y","type":"linear | point","desc":"The shape's centre. Omitted, it sits at the middle of the plot on that axis."},{"name":"symbol","type":"ordinal","desc":"$L7"},{"name":"size","type":"linear","desc":"$L8"},{"name":"angle","type":"linear","desc":"$L9"},{"name":"fill / stroke / strokeWidth / strokeDash / opacity","type":"const | field","desc":"Paint, as on any mark."},{"name":"ports","type":"true | sides | { out, in }","desc":"$La"}]}]}],"\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le"]}],null,"$Lf"]}],{},null,false]},null,false]},null,false]},null,false],"$L10",false]],"m":"$undefined","G":["$11",[]],"s":false,"S":true}
+12:I[7009,["9756","static/chunks/9756-774bfe52807a90d2.js","2816","static/chunks/2816-0775acbb7f82aaa6.js","2172","static/chunks/2172-cb2795254ef6d392.js","6888","static/chunks/6888-d7628378e7d9be3c.js","8466","static/chunks/8466-86c5e1c8c141e446.js","7565","static/chunks/app/marks/shape/page-d17ea1252b1463e0.js"],"Example"]
+15:I[8500,["9756","static/chunks/9756-774bfe52807a90d2.js","2816","static/chunks/2816-0775acbb7f82aaa6.js","2172","static/chunks/2172-cb2795254ef6d392.js","6888","static/chunks/6888-d7628378e7d9be3c.js","8466","static/chunks/8466-86c5e1c8c141e446.js","7565","static/chunks/app/marks/shape/page-d17ea1252b1463e0.js"],""]
+17:I[484,[],"OutletBoundary"]
+19:I[7837,[],"AsyncMetadataOutlet"]
+1b:I[484,[],"ViewportBoundary"]
+1d:I[484,[],"MetadataBoundary"]
+1e:"$Sreact.suspense"
+6:["$","code",null,{"className":"inline","children":"point"}]
+7:["The shape per row. A field maps onto the named shapes ",["$","code",null,{"className":"inline","children":"circle"}],", ",["$","code",null,{"className":"inline","children":"square"}],", ",["$","code",null,{"className":"inline","children":"triangle"}],", ",["$","code",null,{"className":"inline","children":"diamond"}],", ",["$","code",null,{"className":"inline","children":"star"}],", ",["$","code",null,{"className":"inline","children":"cross"}],", ",["$","code",null,{"className":"inline","children":"wye"}]," by default, or onto ",["$","code",null,{"className":"inline","children":"scale: { range: [...] }"}]," — names or SVG path strings. Overrides ",["$","code",null,{"className":"inline","children":"path"}],"."]
+8:["The radius of the box the shape fits, in px (default 6). Pair with ",["$","code",null,{"className":"inline","children":"resize()"}]," to drag it."]
+9:["Rotation in degrees, counter-clockwise from east, about the shape’s centre. Pair with ",["$","code",null,{"className":"inline","children":"rotate({ pick: 'direct', pivot: 'mark', fold: false })"}],"."]
+a:["Where links may meet the shape’s box in a network. Pair with ",["$","code",null,{"className":"inline","children":"edit.network.connect()"}],"."]
+b:["$","section",null,{"id":"named","children":[["$","h2",null,{"className":"section","children":"Named shapes by category"}],[["$","p",".0",{"children":["Put a categorical field on ",["$","code",null,{"className":"inline","children":"symbol"}]," and each category takes a named shape: ",["$","code",null,{"className":"inline","children":"circle"}],", ",["$","code",null,{"className":"inline","children":"square"}],", ",["$","code",null,{"className":"inline","children":"triangle"}],", ",["$","code",null,{"className":"inline","children":"diamond"}],", ",["$","code",null,{"className":"inline","children":"star"}],", ",["$","code",null,{"className":"inline","children":"cross"}],", ",["$","code",null,{"className":"inline","children":"wye"}],", in that order. ",["$","code",null,{"className":"inline","children":"legends: true"}]," keys each category with its shape."],"className":"intro"}],["$","p",".1",{"children":"The shape is picked inside its whole body, so you can grab a star by any point of it.","className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L12",".2",{"code":"mount(Elicit({\n  width: 440, height: 280,\n  margins: { top: 16, right: 16, bottom: 32, left: 36 },\n  legends: true,\n  schema: {\n    x: { type: \"quantitative\", domain: [0, 100] },\n    y: { type: \"quantitative\", domain: [0, 100] },\n    kind: { type: \"categorical\", domain: [\"oak\", \"pine\", \"birch\", \"maple\"] },\n  },\n  data: [\n    { x: 18, y: 30, kind: \"oak\" },   { x: 30, y: 72, kind: \"pine\" },\n    { x: 46, y: 48, kind: \"birch\" }, { x: 62, y: 80, kind: \"maple\" },\n    { x: 74, y: 26, kind: \"oak\" },   { x: 86, y: 58, kind: \"pine\" },\n  ],\n  marks: [\n    shape({\n      size: 9, fill: \"#0f766e\",\n      channels: {\n        x: { field: \"x\" },\n        y: { field: \"y\" },\n        // Each category takes a named shape: circle, square, triangle, diamond, …\n        symbol: { field: \"kind\", edit: cycle() },\n      },\n      edits: [move({ channels: [\"x\", \"y\"] })],\n    }),\n  ],\n}));\n","title":"Trees by species","blurb":"symbol on a categorical field maps each species to a named shape; the legend keys them.","try":[["$","b",null,{"children":"Drag"}]," a shape to move it · ",["$","b",null,{"children":"click"}]," one to cycle its species."]}]]}]]}]
+13:T43a,// Hand-written SVG paths, one per category. Any coordinates work:
+// each path is fitted to a box of radius `size` around its row's x/y.
+const house = "M0 10 L10 0 L20 10 L17 10 L17 20 L3 20 L3 10 Z";
+const car = "M1 12 L4 6 L16 6 L19 12 L19 16 L1 16 Z M4 16 A2 2 0 0 0 8 16 Z M12 16 A2 2 0 0 0 16 16 Z";
+const heart = "M10 18 L2.5 10 A5 5 0 0 1 10 4.5 A5 5 0 0 1 17.5 10 Z";
+
+mount(Elicit({
+  width: 380, height: 260,
+  margins: { top: 20, right: 16, bottom: 32, left: 36 },
+  schema: {
+    need: { type: "categorical", domain: ["housing", "transport", "health"] },
+    priority: { type: "quantitative", domain: [0, 10] },
+  },
+  data: [
+    { need: "housing", priority: 7 },
+    { need: "transport", priority: 4 },
+    { need: "health", priority: 8 },
+  ],
+  marks: [
+    shape({
+      size: 16,
+      channels: {
+        x: { field: "need" },
+        y: { field: "priority", edit: move() },
+        symbol: { field: "need", scale: { range: [house, car, heart] } },
+        fill: { field: "need", scale: { range: ["#4e79a7", "#f28e2b", "#e15759"] } },
+      },
+    }),
+  ],
+}));
+c:["$","section",null,{"id":"pictograms","children":[["$","h2",null,{"className":"section","children":"Pictograms from SVG paths"}],[["$","p",".0",{"children":["Give ",["$","code",null,{"className":"inline","children":"symbol"}]," a ",["$","code",null,{"className":"inline","children":"scale: { range: [...] }"}]," of SVG path strings, and each category draws its own pictogram. A path can use any coordinates: it is fitted to the box of radius ",["$","code",null,{"className":"inline","children":"size"}]," around its row's position."],"className":"intro"}],["$","p",".1",{"children":["The elicited value is still the category. The path is its encoding, like a colour on ",["$","code",null,{"className":"inline","children":"fill"}],"."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L12",".2",{"code":"$13","title":"Rank three needs","blurb":"A path per category on the symbol scale; move() on y sets each priority.","try":[["$","b",null,{"children":"Drag"}]," a pictogram up or down to set its priority."]}]]}]]}]
+14:T4c0,// Wind at three stations: drag an arrow to turn it, Shift-drag to set its speed.
+const arrow = "M0 7 L12 7 L12 2 L20 10 L12 18 L12 13 L0 13 Z";   // points right (0°)
+
+mount(Elicit({
+  width: 400, height: 260,
+  margins: { top: 16, right: 16, bottom: 32, left: 36 },
+  schema: {
+    x: { type: "quantitative", domain: [0, 100] },
+    y: { type: "quantitative", domain: [0, 100] },
+    dir: { type: "quantitative", domain: [0, 360] },
+    speed: { type: "quantitative", domain: [0, 30] },
+  },
+  data: [
+    { x: 22, y: 62, dir: 30, speed: 12 },
+    { x: 52, y: 34, dir: 120, speed: 20 },
+    { x: 80, y: 70, dir: 300, speed: 6 },
+  ],
+  constraints: [clamp({ field: "speed", min: 2, max: 30 })],
+  marks: [
+    shape({
+      path: arrow,
+      fill: "#2563eb",
+      channels: {
+        x: { field: "x" },
+        y: { field: "y" },
+        // Degrees, counter-clockwise from east.
+        angle: {
+          field: "dir",
+          scale: { range: [0, 360] },
+          edit: rotate({ pick: "direct", pivot: "mark", fold: false, when: when.noShift }),
+        },
+        size: { field: "speed", scale: { range: [4, 28] } },
+      },
+      edits: [resize({ channel: "size", when: when.shift })],
+    }),
+  ],
+}));
+d:["$","section",null,{"id":"path","children":[["$","h2",null,{"className":"section","children":"One path for every row"}],[["$","p",".0",{"children":["With no ",["$","code",null,{"className":"inline","children":"symbol"}]," channel, the ",["$","code",null,{"className":"inline","children":"path"}]," option sets the shape: a name, an SVG path, or ",["$","code",null,{"className":"inline","children":"(d, i, data) => string"}]," for a shape chosen per row. It defaults to ",["$","code",null,{"className":"inline","children":"\"circle\""}],". A string that is neither a name nor a readable path draws a circle and logs a warning."],"className":"intro"}],["$","p",".1",{"children":[["$","code",null,{"className":"inline","children":"angle"}]," rotates the shape in degrees, counter-clockwise from east. ",["$","code",null,{"className":"inline","children":"rotate()"}]," on ",["$","code",null,{"className":"inline","children":"angle"}]," turns it about its centre, and ",["$","code",null,{"className":"inline","children":"resize()"}]," on ",["$","code",null,{"className":"inline","children":"size"}]," grows it. Here a plain drag turns an arrow and Shift-drag sets its speed."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L12",".2",{"code":"$14","title":"Wind arrows","blurb":"path sets one arrow for every row; rotate() writes dir and resize() writes speed.","try":[["$","b",null,{"children":"Drag"}]," around an arrow to turn it · ",["$","b",null,{"children":"Shift-drag"}]," outward to make it longer."]}]]}]]}]
+16:T65f,mount(Elicit({
+  width: 460, height: 280,
+  margins: { top: 24, right: 24, bottom: 24, left: 24 },
+  axes: false,
+  schema: {
+    structure: "network",
+    tables: {
+      stations: {
+        role: "nodes",
+        fields: {
+          id: { type: "categorical", key: true, open: true },
+          kind: { type: "categorical", domain: ["source", "relay", "sink"] },
+          x: { type: "quantitative", domain: [0, 100] },
+          y: { type: "quantitative", domain: [0, 100] },
+        },
+      },
+      feeds: {
+        role: "links",
+        directed: true,
+        fields: { source: { type: "ref" }, target: { type: "ref" } },
+      },
+    },
+  },
+  data: {
+    stations: [
+      { id: "a", kind: "source", x: 10, y: 50 },
+      { id: "b", kind: "relay", x: 40, y: 20 },
+      { id: "c", kind: "relay", x: 40, y: 80 },
+      { id: "d", kind: "relay", x: 68, y: 50 },
+      { id: "e", kind: "sink", x: 92, y: 50 },
+    ],
+    feeds: [
+      { source: "a", target: "b" },
+      { source: "a", target: "c" },
+      { source: "b", target: "d" },
+    ],
+  },
+  marks: [
+    link({ stroke: "#94a3b8", strokeWidth: 1.5, edits: [edit.network.rewire()] }),
+    shape({
+      size: 14,
+      channels: {
+        x: { field: "x", edit: move({ channels: ["x", "y"], mode: "relative" }) },
+        y: { field: "y" },
+        symbol: { field: "kind", scale: { range: ["triangle", "circle", "square"] } },
+        fill: { field: "kind", scale: { range: ["#59a14f", "#4e79a7", "#e15759"] } },
+        // Drag from a port to another station to link them.
+        ports: { value: true, edit: edit.network.connect() },
+      },
+    }),
+  ],
+}));
+e:["$","section",null,{"id":"network","children":[["$","h2",null,{"className":"section","children":"Shapes as network nodes"}],[["$","p",".0",{"children":["A shape declares its box, so it can be the node mark of a ",["$","$L15",null,{"href":"/marks/network","children":"network"}],". Links meet the box's edges, and a ",["$","code",null,{"className":"inline","children":"ports"}]," channel puts connection points on them. Links treat a rotated shape as unrotated."],"className":"intro"}]],["$","div",null,{"className":"grid","children":[["$","$L12",".1",{"code":"$16","title":"A supply network","blurb":"Each station is a shape by kind. ports with edit.network.connect() draws new links.","try":[["$","b",null,{"children":"Drag"}]," a station to move it · ",["$","b",null,{"children":"drag"}]," from a port to another station to link them · ",["$","b",null,{"children":"drag"}]," a link's end to rewire it."]}]]}]]}]
+f:["$","$L17",null,{"children":["$L18",["$","$L19",null,{"promise":"$@1a"}]]}]
+10:["$","$1","h",{"children":[null,[["$","$L1b",null,{"children":"$L1c"}],null],["$","$L1d",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1e",null,{"fallback":null,"children":"$L1f"}]}]}]]}]
+1c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+18:null
+1a:{"metadata":[["$","title","0",{"children":"ElicitJS Docs"}],["$","meta","1",{"name":"description","content":"Declarative visual belief elicitation — documentation"}]],"error":null,"digest":"$undefined"}
+1f:"$1a:metadata"
