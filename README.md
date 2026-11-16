@@ -1,6 +1,6 @@
 # elicitjs.github.io
 
-The ElicitJS documentation site, live at <https://elicitjs.github.io/>.
+The Elicit.js documentation site, live at <https://elicitjs.github.io/>.
 
 **This repository is generated. Do not edit it by hand** — the next deploy
 overwrites everything here.
