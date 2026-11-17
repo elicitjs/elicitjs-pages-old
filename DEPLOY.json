@@ -1,8 +1,8 @@
 {
-  "deployedAt": "2026-11-16T17:44:36.324Z",
+  "deployedAt": "2026-11-17T03:13:24.275Z",
   "sourceRepo": "elicitjs/elicitjs-docs",
   "sourceBranch": "main",
-  "sourceCommit": "fde6d5c24e72d26295f96e63444fdf1f87b6c76b",
+  "sourceCommit": "c51dee9739b44808af12eccca7584a52ca0566c7",
   "sourceDirty": false,
   "libraryVersion": "0.1.0-alpha.3",
   "pages": 60
